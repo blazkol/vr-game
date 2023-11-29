@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 978eb245c1b94767993e17c1387277d4
+  - enabled: 1
+    path: Assets/Scenes/PolyShooter.unity
+    guid: 988b31f65e349264c8e0903bb13b90e3
+  - enabled: 1
+    path: Assets/Scenes/Outro.unity
+    guid: bf4af6235af813ebcb29b097be62ece2
   m_configObjects:
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 9e342752495ce814f99240b8538b96e3, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 77c852275ba9bda4e898de815d4ba532, type: 2}

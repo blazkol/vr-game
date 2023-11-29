@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
-public class GameController : MonoBehaviour
+using UnityEngine.SceneManagement;
+
+public class OutroController : MonoBehaviour
 {
     void Update()
     {
-        // Check for "R" key press.
-        if (Input.GetKeyDown(KeyCode.R))
+        // Check for "Space" key press.
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             RestartGame();
         }
@@ -18,6 +20,6 @@ public class GameController : MonoBehaviour
     {
         // Add logic to restart the game here.
         // For example, reload the current scene.
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }
